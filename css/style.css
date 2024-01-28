@@ -15,6 +15,9 @@ body{
 .greetings{
     font-size: 6rem;
     font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 .greetings > span{
     animation: glow 2.5s ease-in-out infinite;
@@ -22,7 +25,7 @@ body{
 @keyframes glow{
     0%, 100%{
         color: #fff;
-        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+        text-shadow: 0 0 12px rgb(182, 22, 84), 0 0 50px rgb(182, 22, 84), 0 0 100px rgb(182, 22, 84);
     }
     10%, 90%{
         color: #111;
@@ -40,6 +43,12 @@ body{
 }
 .greetings > span:nth-child(5){
     animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: 1s;
+}
+.greetings > span:nth-child(7){
+    animation-delay: 1.2s;
 }
 
 .description{
@@ -67,4 +76,8 @@ body{
     .button a{
         font-size: .5rem;
     }
+}
+
+.message {
+    color: rgb(217, 55, 117);
 }
